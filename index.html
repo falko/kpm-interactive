@@ -1,1 +1,103 @@
-<img src="SCREEN-MODE-2.png" height="100%"> 
+<script type="text/javascript" src="http://livejs.com/live.js"></script>
+<style>
+#table {
+  background-image: url(wood-mahogany.png);
+  background-repeat: repeat;
+  width: 285px;
+  height: 523;
+  position: absolute;
+  left: 173px;
+  top: 263px;
+}
+.plate{
+  width: 120px;
+  position: absolute;
+}
+#plate1 {
+  left: 178px;
+  top: 349px;
+}
+#plate2 {
+  left: 178px;
+  top: 587px;
+}
+#plate3 {
+  left: 332px;
+  top: 349px;
+}
+#plate4 {
+  left: 332px;
+  top: 587px;
+}
+.button {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+}
+
+#button1 {
+    top: 638px;
+    left: 474px;
+}
+#button2 {
+    top: 716px;
+    left: 474px;
+}
+#button3 {
+    top: 638px;
+    left: 551px;
+}
+#button4 {
+    top: 716px;
+    left: 551px;
+}
+#button5 {
+    top: 843px;
+    left: 177px;
+}
+#button6 {
+    top: 843px;
+    left: 280px;
+}
+#button7 {
+    top: 843px;
+    left: 386px;
+}
+</style>
+<div id="table">
+</div>
+<div id="cutlery" style="height:1000;position:absolute">
+  <img src="cutlery.png" height="100%">
+</div>
+<div class="plate" id="plate1">
+  <img id="p1" src="plate-black.png" width="100%">
+</div>
+<div class="plate" id="plate2">
+  <img id="p2" src="plate-black.png" width="100%">
+</div>
+<div class="plate" id="plate3">
+  <img id="p3" src="plate-black.png" width="100%">
+</div>
+<div class="plate" id="plate4">
+  <img id="p4" src="plate-black.png" width="100%">
+</div>
+<div class="button" id="button1" onClick="changeImage('plate-white.png')"></div>
+<div class="button" id="button2" onClick="changeImage('plate-goldrim.png')"></div>
+<div class="button" id="button3" onClick="changeImage('plate-platinum.png')"></div>
+<div class="button" id="button4" onClick="changeImage('plate-flowers.png')"></div>
+<script type="text/javascript">
+    function changeImage(a) {
+        document.getElementById("p1").src=a;
+        document.getElementById("p2").src=a;
+        document.getElementById("p3").src=a;
+        document.getElementById("p4").src=a;
+    }
+</script>
+<script type="text/javascript">
+    function changeTable(a) {
+        document.getElementById("table").style.backgroundImage=a;
+    }
+</script>
+<div class="button" id="button5" onClick="changeTable('url(wood-white.png)')"></div>
+<div class="button" id="button6" onClick="changeTable('url(wood-coffee.png)')"></div>
+<div class="button" id="button7" onClick="changeTable('url(wood-mahogany.png)')"></div>
